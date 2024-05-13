@@ -1,69 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  margin: 0;
-  background: #aaa;
-  color: #333;
+
   /* I'll give you this one for free lol */
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 0;
+
+  color: #333;
+  background: #aaa;
 }
 
 .modal {
-  background: white;
-  width: 480px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 500px;
+  padding: 20px;
+
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  background: white;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px
+}
+
+.text {
+  margin-bottom: 10px;
 }
 
 .icon {
-  color: royalblue;
   font-size: 26px;
   font-weight: 700;
-  background: lavender;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   justify-content: center;
+
+  width: 42px;
+  height: 42px;
+  margin: 0 20px 0 0;
+
+  color: royalblue;
+  border-radius: 50%;
+  background: lavender;
 }
 
 .close-button {
-  background: #eee;
-  border-radius: 50%;
-  color: #888;
-  font-weight: 400;
   font-size: 16px;
-  height: 24px;
-  width: 24px;
+  font-weight: 400;
+
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   justify-content: center;
-  border: 1px solid #eee;
+
+  width: 24px;
+  height: 24px;
   padding: 0;
+
+  color: #888;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  background: #eee;
 }
 
 button {
-  cursor: pointer;
   padding: 8px 16px;
+
+  cursor: pointer;
+
   border-radius: 8px;
 }
 
 button.continue {
-  background: royalblue;
-  border: 1px solid royalblue;
   color: white;
+  border: 1px solid royalblue;
+  background: royalblue;
 }
 
 button.cancel {
-  background: white;
-  border: 1px solid #ddd;
   color: royalblue;
+  border: 1px solid #ddd;
+  background: white;
 }
